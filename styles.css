@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"] {
+    padding: 8px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    padding: 8px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 3px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#studentInfo {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+#studentInfo {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    opacity: 0; /* initially hidden */
+    transition: opacity 0.5s ease-in-out; /* fade in transition */
+    max-height: 0; /* initially hidden */
+    overflow: hidden; /* initially hidden */
+}
+
+#studentInfo.show {
+    opacity: 1; /* show with animation */
+    max-height: 200px; /* adjust to fit content */
+}
+
+@keyframes rainbow {
+    0% { background-color: red; }
+    16.666% { background-color: orange; }
+    33.333% { background-color: yellow; }
+    50% { background-color: green; }
+    66.666% { background-color: blue; }
+    83.333% { background-color: indigo; }
+    100% { background-color: violet; }
+}
+
+/* Apply animation to button background */
+#rainbowButton {
+    animation: rainbow 2s infinite;
+    color: black; /* Normal text color */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}

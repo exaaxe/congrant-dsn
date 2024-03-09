@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>อยากขลิบหำ</title>
+    <link rel="icon" href="https://cdn.discordapp.com/attachments/1044188408077095003/1208744582976901140/image.png?ex=65f6db1d&is=65e4661d&hm=5053e29165b31b5e0e1e2c3100a9de915139d24bd790c4842410f7ce6b42e547&" type="image/x-icon">
+    <link rel="shortcut icon" href="https://cdn.discordapp.com/attachments/1044188408077095003/1208744582976901140/image.png?ex=65f6db1d&is=65e4661d&hm=5053e29165b31b5e0e1e2c3100a9de915139d24bd790c4842410f7ce6b42e547&" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    
+
+    <div class="container">
+        <label for="studentId">ใส่เลขค้าบสุดหล่อ:</label>
+        <input type="text" id="studentId">
+        <button id="rainbowButton" onclick="showStudentInfo()">กดแล้วหำจะใหญ่</button>
+
+        <div id="studentInfo"></div>
+
+        <div id="popup" class="popup">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <p id="popupMessage"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
